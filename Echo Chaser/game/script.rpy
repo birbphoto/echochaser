@@ -30,7 +30,14 @@ label start:
     "bg should be shown now"  
 
     show finn at right with dissolve
-    f "IM A GAY MAN"
+    f "im finn ofc ofc"
     fr "fr"
 
     "testing sound now"
+    play sound "incorrect.mp3"
+    "WRONGGGG"
+
+    "testing music"
+    play music "beethoven.mp3" with fadein
+    "you will now hear some slow jazz"
+    stop music fadeout 1.0
