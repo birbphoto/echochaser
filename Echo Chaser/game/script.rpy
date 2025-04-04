@@ -5,7 +5,8 @@ define fr = Character("Frazier", color="#8322c4")
 image finn = "finn.png"
 image ari = "ari.png"
 image frazier = "frazier.png"
-image ilya = "ilya.jpg"
+image bg ilya = "ilya.jpg"
+image bg 3dmodel = "3d-model.jpg"
 
 label start:
     show finn at right
@@ -24,7 +25,10 @@ label start:
     "SHOULD BE CLEAR"
 
     "backgrounds now"
-    show bg ilya
-    with dissolve
+    show bg 3dmodel with dissolve
 
-    show finn
+    "bg should be shown now"  
+
+    show finn at right with dissolve
+    f "IM A GAY MAN"
+    fr "fr"
