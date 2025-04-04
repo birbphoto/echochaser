@@ -1,34 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 70, in script
-    show finn with bounce
-TypeError: got an unexpected keyword argument 'old_widget'
+  File "game/script.rpy", line 87, in script
+    $ start_qte()
+  File "game/script.rpy", line 87, in <module>
+    $ start_qte()
+  File "game/quicktime.rpy", line 13, in start_qte
+    renpy.timeout(1.5, "qte_fail")
+TypeError: timeout() takes 1 positional argument but 2 were given
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 70, in script
-    show finn with bounce
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/ast.py", line 1374, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/exports/statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/display/core.py", line 1581, in do_with
-    return self.interact(trans_pause=True,
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/display/core.py", line 2218, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/display/core.py", line 2669, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/display/core.py", line 2578, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/atl.py", line 623, in __call__
-    new_scope = signature.apply(args, kwargs, partial=True, apply_defaults=False)
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/parameter.py", line 384, in apply
-    raise TypeError(
-TypeError: got an unexpected keyword argument 'old_widget'
+  File "game/script.rpy", line 87, in script
+    $ start_qte()
+  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 87, in <module>
+    $ start_qte()
+  File "game/quicktime.rpy", line 13, in start_qte
+    renpy.timeout(1.5, "qte_fail")
+TypeError: timeout() takes 1 positional argument but 2 were given
 
 Linux-6.6.66-06602-g2b73872e56ce-x86_64-with-glibc2.36 x86_64
 Ren'Py 8.3.7.25031702
 Echo Chaser 1.0
-Fri Apr  4 11:02:36 2025
+Fri Apr  4 12:25:56 2025

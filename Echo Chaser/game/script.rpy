@@ -82,3 +82,14 @@ label start:
     show ari at left with dissolve
 
     a "ok this should work i think"
+    label some_scene:
+    "A quick-time event is about to start!"
+    $ start_qte()
+    call screen qte_screen
+
+    if qte_success:
+        "You succeeded!"
+    else:
+        "You failed!"
+
+    return
