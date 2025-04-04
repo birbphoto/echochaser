@@ -67,6 +67,6 @@ label start:
     show frazier
     fr "hi its me the deer guy"
     fr "fr fr"
-    show finn with bounce
+    show finn at bounce, center
     f "i bounced"
     f "cool amirite"
