@@ -32,3 +32,5 @@ label start:
     show finn at right with dissolve
     f "IM A GAY MAN"
     fr "fr"
+
+    "testing sound now"
