@@ -38,10 +38,10 @@ label start:
     "WRONGGGG"
 
     "testing music"
-    play music "beethoven.mp3" with fadein
+    play music "beethoven.mp3"
     "you will now hear some slow jazz"
     stop music fadeout 1.0
-    f "fuck jazz no longer"
+    f "oh no jazz no longer"
     hide finn with dissolve
 
     
