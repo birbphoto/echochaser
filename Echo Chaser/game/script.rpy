@@ -23,8 +23,8 @@ transform bounce:
     repeat
 
 label start:
-    # for testing purposes!! please remove goto if testing whole game.
-    jump nyclamppo
+    # for testing purposes!! please comment jump if testing whole game.
+    # jump nyclamppo
     show finn at right
     f "finn test"
     show ari
