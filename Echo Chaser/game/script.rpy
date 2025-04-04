@@ -91,5 +91,3 @@ label start:
         "You succeeded!"
     else:
         "You failed!"
-
-    return

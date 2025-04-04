@@ -19,10 +19,24 @@ init python:
             store.qte_success = False
             renpy.jump("qte_fail")
 
+style qte_text:
+    size 50
+    color "#FFFFFF"
+    outlines [(3, "#000000")]  # Note: "outlines" (plural) instead of "outline"
+    xalign 0.5
+    yalign 0.4
 
+screen quicktime_event(qte_key, on_success):
+    modal True
+    tag qte  # ensures it replaces other screens with the same tag
+
+    text "Press [qte_key]!" xpos 0.5 ypos 0.4 style "qte_text"
+
+    key qte_key action [Hide('quicktime_event'), Function(on_success)]
 
 screen qte_screen:
-    text "Press [qte_key]!" xpos 0.5 ypos 0.4
+    text "Press [qte_key]!" xpos 0.5 ypos 0.4 style "qte_text"
+
     key [qte_key] action Function(check_qte, qte_key)
     timer 1.5 action Jump("qte_fail")
 
