@@ -83,11 +83,8 @@ label start:
 
     a "ok this should work i think"
     label some_scene:
-    "A quick-time event is about to start!"
+    "Test 1"
     $ start_qte()
     call screen qte_screen
 
-    if qte_success:
-        "You succeeded!"
-    else:
-        "You failed!"
+    "hi ho you suck anyways"

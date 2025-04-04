@@ -42,8 +42,12 @@ screen qte_screen:
 
 label qte_success:
     "Success! You pressed the right key in time!"
+    a "im proud"
+    $ fail = False
     return
 
 label qte_fail:
     "Too slow! Or wrong key!"
+    a "you fucking suck jump off a cliff"
+    $ fail = True
     return
