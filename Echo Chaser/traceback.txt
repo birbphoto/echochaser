@@ -1,30 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 87, in script
-    $ start_qte()
-  File "game/script.rpy", line 87, in <module>
-    $ start_qte()
-  File "game/quicktime.rpy", line 13, in start_qte
-    renpy.timeout(1.5, "qte_fail")
-TypeError: timeout() takes 1 positional argument but 2 were given
+  File "game/script.rpy", line 97, in script
+    if fail == False:
+  File "game/script.rpy", line 97, in <module>
+    if fail == False:
+NameError: name 'fail' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 87, in script
-    $ start_qte()
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/python.py", line 1187, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 87, in <module>
-    $ start_qte()
-  File "game/quicktime.rpy", line 13, in start_qte
-    renpy.timeout(1.5, "qte_fail")
-TypeError: timeout() takes 1 positional argument but 2 were given
+  File "game/script.rpy", line 97, in script
+    if fail == False:
+  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/ast.py", line 1856, in execute
+    if renpy.python.py_eval(condition):
+  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/python.py", line 1218, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 97, in <module>
+    if fail == False:
+NameError: name 'fail' is not defined
 
 Linux-6.6.66-06602-g2b73872e56ce-x86_64-with-glibc2.36 x86_64
 Ren'Py 8.3.7.25031702
 Echo Chaser 1.0
-Fri Apr  4 12:25:56 2025
+Fri Apr  4 13:57:34 2025

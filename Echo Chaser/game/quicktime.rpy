@@ -44,6 +44,7 @@ label qte_success:
     "Success! You pressed the right key in time!"
     a "im proud"
     $ fail = False
+    jump Success
     return
 
 label qte_fail:

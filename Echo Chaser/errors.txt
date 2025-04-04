@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label qte_success is defined twice, at File "game/quicktime.rpy", line 43:
-label qte_success:
-and File "game/script.rpy", line 98:
-    label qte_success:
-
+File "game/script.rpy", line 98: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "hi ho"
+    ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri Apr  4 13:16:18 2025
+Fri Apr  4 13:57:13 2025

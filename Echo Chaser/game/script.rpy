@@ -20,6 +20,8 @@ transform bounce:
     repeat
 
 label start:
+    # for testing purposes!! please remove goto if testing whole game.
+    jump nyclamppo
     show finn at right
     f "finn test"
     show ari
@@ -73,7 +75,7 @@ label start:
     hide finn
     hide frazier
 
-
+label nyclamppo:
     show bg nyclamp with dissolve
     show finn at right with dissolve
 
@@ -82,9 +84,34 @@ label start:
     show ari at left with dissolve
 
     a "ok this should work i think"
-    label some_scene:
+    
+    jump Success # DEBUG!!! delete to test quicktime
+
+label some_scene:
     "Test 1"
     $ start_qte()
     call screen qte_screen
+    
+label Success:
+    "damn"
+    #if fail == False:
+    #   "hi ho"
+    a "running fine still?"
+    #test menu/variable
+    menu:
+        "Running OK?"
 
-    "hi ho you suck anyways"
+        "Yes.":
+            a "good"
+            $ running = True
+        "No.":
+            a "uh oh"
+            $ running = False
+        "nvfm jump":
+            a "kk"
+    
+    "end of menu"
+    if running:
+        "Running fine"
+    else:
+        "Not running fine"
