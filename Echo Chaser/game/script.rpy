@@ -8,6 +8,17 @@ image frazier = "frazier.png"
 image bg ilya = "ilya.jpg"
 image bg 3dmodel = "3d-model.jpg"
 
+
+transform bounce:
+    pause .15
+    yoffset 0
+    easein .175 yoffset -10
+    easeout .175 yoffset 0
+    easein .175 yoffset -4
+    easeout .175 yoffset 0
+    yoffset 0
+    repeat
+
 label start:
     show finn at right
     f "finn test"
@@ -44,4 +55,18 @@ label start:
     f "oh no jazz no longer"
     hide finn with dissolve
 
-    
+    hide bg 3dmodel with dissolve
+
+    "good job give yourself a pat on the back bc now we're acc getting to develop"
+    "IF ONLY LUCA FINISHED HIS SCRIPT"
+    "oml fr"
+    f "do it now"
+    fr "or at least send us the gist so we can get to work while"
+    fr "you write"
+
+    show frazier
+    fr "hi its me the deer guy"
+    fr "fr fr"
+    show finn with bounce
+    f "i bounced"
+    f "cool amirite"
