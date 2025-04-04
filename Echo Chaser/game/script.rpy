@@ -2,6 +2,9 @@ define f = Character("Finn", color="#ad3232")
 define a = Character("Ari", color="#0c8fa0")
 define fr = Character("Frazier", color="#8322c4")
 
+init python:
+    renpy.music.register_channel("voice", loop=False, stop_on_mute=True)
+
 image finn = "finn.png"
 image ari = "ari.png"
 image frazier = "frazier.png"
@@ -115,3 +118,11 @@ label Success:
         "Running fine"
     else:
         "Not running fine"
+    f "im speaking over you." (multiple=2)
+    fr "yeah finn stfu" (multiple=2)
+
+    "Testing say with voice"
+    play sound "incorrect.mp3"
+    f "hi"
+    stop sound
+    fr "no"
