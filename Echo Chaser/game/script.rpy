@@ -1,4 +1,4 @@
-﻿define f = Character("Finn", color="#ad3232")
+define f = Character("Finn", color="#ad3232")
 define a = Character("Ari", color="#0c8fa0")
 define fr = Character("Frazier", color="#8322c4")
 
@@ -7,7 +7,7 @@ image ari = "ari.png"
 image frazier = "frazier.png"
 image bg ilya = "ilya.jpg"
 image bg 3dmodel = "3d-model.jpg"
-
+image bg nyclamp = "nyc.jpg"
 
 transform bounce:
     pause .15
@@ -70,3 +70,15 @@ label start:
     show finn at bounce, center
     f "i bounced"
     f "cool amirite"
+    hide finn
+    hide frazier
+
+
+    show bg nyclamp with dissolve
+    show finn at right with dissolve
+
+    f "this is nyc ofc"
+
+    show ari at left with dissolve
+
+    a "ok this should work i think"
