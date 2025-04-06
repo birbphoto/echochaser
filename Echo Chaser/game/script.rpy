@@ -1,4 +1,4 @@
-define f = Character("Finn", color="#ad3232")
+﻿define f = Character("Finn", color="#ad3232")
 define a = Character("Ari", color="#0c8fa0")
 define fr = Character("Frazier", color="#8322c4")
 
@@ -126,3 +126,4 @@ label Success:
     f "hi"
     stop sound
     fr "no"
+    
