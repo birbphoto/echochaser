@@ -1,4 +1,6 @@
-﻿define f = Character("Finn", color="#ad3232")
+﻿define config.default_text_cps = 20  # Characters per second
+
+define f = Character("Finn", color="#ad3232")
 define a = Character("Ari", color="#0c8fa0")
 define fr = Character("Frazier", color="#8322c4")
 
@@ -59,7 +61,7 @@ label test1:
     "Test version 1.0 (nil)"
     "I'm going to try to jump to another script. (test1nil.rpy)"
     jump test1nil
-    
+
 label test2:
     "Test version 1.1"
     "I'm going to try to jump to another script. (test1one.rpy)"
