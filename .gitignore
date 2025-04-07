@@ -186,6 +186,7 @@ Echo Chaser/game/cache/
 # Ignore save files
 Echo Chaser/game/saves/
 
+Echo Chaser/traceback.txt
 # Optional: if you only want to ignore autosaves but keep manual saves
 # Echo Chaser/game/saves/auto-*-LT1.save
 

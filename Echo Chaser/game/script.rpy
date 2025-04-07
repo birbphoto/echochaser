@@ -1,6 +1,4 @@
-﻿define config.default_text_cps = 20  # Characters per second
-
-define f = Character("Finn", color="#ad3232")
+﻿define f = Character("Finn", color="#ad3232")
 define a = Character("Ari", color="#0c8fa0")
 define fr = Character("Frazier", color="#8322c4")
 
@@ -25,29 +23,29 @@ transform bounce:
     repeat
 
 """
-Template for character speech:
-    play sound "voice/characterline.mp3"
-    Character "hi"
-    stop sound
+Template for character speech:  
+        play sound "voice/characterline.mp3"
+        Character "hi"
+        stop sound
 
-(allows for S;G style voice lines with text)
+    (allows for S;G style voice lines with text)
 
-Idea for call function:
+    Idea for call function:
 
-label csay(saychar, msg, voiceline):
-    play sound voiceline
-    $ saychar(msg)
-    stop sound
-    return
+    label csay(saychar, msg, voiceline):
+        play sound voiceline
+        $ saychar(msg)
+        stop sound
+        return
 
-call csay(f, "Hi! How are you? This is long for testing.", "incorrect.mp3")
+    call csay(f, "Hi! How are you? This is long for testing.", "incorrect.mp3")
 
-Idea for define function:
+    Idea for define function:
 
-$ def CSay(saychar, msg, voiceline):
-    play sound voiceline
-    saychar msg
-    stop sound
+    $ def CSay(saychar, msg, voiceline):
+        play sound voiceline
+        saychar msg
+        stop sound
 """
 
 label start:
