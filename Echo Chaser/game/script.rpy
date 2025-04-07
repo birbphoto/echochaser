@@ -22,7 +22,15 @@ transform bounce:
     yoffset 0
     repeat
 
+
 label start:
+    menu:
+        "Test version 1.0":
+            jump test1
+        "Test version 1.1":
+            jump test2
+
+label test1:
     # for testing purposes!! please comment jump if testing whole game.
     # jump nyclamppo
     show finn at right
@@ -128,3 +136,5 @@ label Success:
     stop sound
     fr "no"
     
+label test2:
+    "Test version 1.1"

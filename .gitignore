@@ -176,3 +176,19 @@ cython_debug/
 *log*
 */cache/*
 */saves/*
+
+# Ignore log files
+Echo Chaser/errors.txt
+
+# Ignore compiled Ren'Py bytecode except script.rpyc
+Echo Chaser/game/cache/
+
+# Ignore save files
+Echo Chaser/game/saves/
+
+# Optional: if you only want to ignore autosaves but keep manual saves
+# Echo Chaser/game/saves/auto-*-LT1.save
+
+# Optional: if you want to keep navigation.json or persistent, list them as exceptions
+# !Echo Chaser/game/saves/navigation.json
+# !Echo Chaser/game/saves/persistent
