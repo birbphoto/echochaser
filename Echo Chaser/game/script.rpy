@@ -112,6 +112,7 @@ label Success:
             $ running = False
         "nvfm jump":
             a "kk"
+            $ running = False
     
     "end of menu"
     if running:
