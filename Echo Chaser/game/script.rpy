@@ -2,6 +2,11 @@
 define a = Character("Ari", color="#0c8fa0")
 define fr = Character("Frazier", color="#8322c4")
 
+
+#screen main_menu:
+    #add "main_menu"
+    #textbutton "Start" action Start() xalign 0.5 yalign 0.5
+
 init python:
     renpy.music.register_channel("voice", loop=False, stop_on_mute=True)
 
