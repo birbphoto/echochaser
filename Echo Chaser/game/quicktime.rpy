@@ -7,9 +7,11 @@ init python:
     import renpy.exports as renpy
 
     def start_qte():
-        store.qte_key = random.choice(["a", "s", "d", "f"])  # Random key choice
+        # Randomly choose a key for the QTE
+        store.qte_key = random.choice(["a", "s", "d", "f"])
         store.qte_success = None
-        renpy.restart_interaction()
+        # Instead of restarting interaction, just show the screen
+        renpy.show_screen("quicktime_event", qte_key=store.qte_key, on_success=on_qte_success)
 
     def check_qte(event):
         if event == store.qte_key:
@@ -19,36 +21,34 @@ init python:
             store.qte_success = False
             renpy.jump("qte_fail")
 
+    def on_qte_success():
+        renpy.jump("qte_success")
+
 style qte_text:
     size 50
     color "#FFFFFF"
-    outlines [(3, "#000000")]  # Note: "outlines" (plural) instead of "outline"
+    outlines [(3, "#000000")]
     xalign 0.5
     yalign 0.4
 
 screen quicktime_event(qte_key, on_success):
     modal True
-    tag qte  # ensures it replaces other screens with the same tag
+    tag qte
 
     text "Press [qte_key]!" xpos 0.5 ypos 0.4 style "qte_text"
 
     key qte_key action [Hide('quicktime_event'), Function(on_success)]
-
-screen qte_screen:
-    text "Press [qte_key]!" xpos 0.5 ypos 0.4 style "qte_text"
-
-    key [qte_key] action Function(check_qte, qte_key)
     timer 1.5 action Jump("qte_fail")
 
 label qte_success:
     "Success! You pressed the right key in time!"
-    a "im proud"
+    a "I'm proud of you!"
     $ fail = False
     jump Success
     return
 
 label qte_fail:
     "Too slow! Or wrong key!"
-    a "you fucking suck jump off a cliff"
+    a "you fucking suck jump off a cliff" #dont change inside joke trust
     $ fail = True
     return

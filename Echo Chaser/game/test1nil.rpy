@@ -64,13 +64,28 @@ label nyclamppo:
 
     a "ok this should work i think"
     
-    jump Success # DEBUG!!! delete to test quicktime
+    # jump Success # DEBUG!!! delete to test quicktime
 
 label some_scene:
     "Test 1"
+    # Start the QTE
     $ start_qte()
-    call screen qte_screen
-    
+    # Wait for the QTE to finish and handle the result
+    if qte_success:
+        jump qte_success
+    else:
+        jump qte_fail
+
+'''label qte_success:
+    "You succeeded in the QTE!"
+    a "Great job! You nailed it!"
+    return
+
+label qte_fail:
+    "You failed the QTE."
+    a "Better luck next time!"
+    return'''
+
 label Success:
     "damn"
     #if fail == False:
