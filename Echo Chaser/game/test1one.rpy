@@ -42,9 +42,28 @@ label test1one:
     stop sound
 
     play sound "voice/cameron/test5.wav"
-    wc "3, 2003, replacing Hits from the Street. The program focused on music, entertainment and lifestyle."
+    wc "Countdown, left that program and became the new host of The Center."
+    stop sound
+
+    show ari at right with dissolve
+    play sound "voice/madison/1.ogg"
+    a "At a time like this, negative people choose to focus on their grief. Well, I hate those people because I am a very positive person. I remember the good times, like when Heather and I got our ears pierced at the mall. I can still hear those late night talks on the phone."
     stop sound
     
+    show frazier with dissolve
+    play sound "voice/hannah/1.ogg"
+    fr "lebronnn lebronn lebron james lebron james lebrooon james lebron james lebron james"
+    stop sound
+
+    play sound "voice/madison/2.ogg"
+    a "Should've thought of that before you killed me. God, I'm gonna be coughing up drain cleaning for eternity. Ugh, Heatherduke is such a sad little poser. Veronica, tell her to stop touching my stuff. Veronica? Veronica?!"
+    stop sound
+
+    play sound "voice/madison/3.ogg"
+    a "And they lived happily ever after. You really believed that. You'd think it would go back to normal. Don't give me that wounded look. You know exactly what he is and you love it. Only a true dead best friend would give it to you straight."
+    stop sound
+
+    hide ari with dissolve
     hide bg coffee with dissolve
     hide wallcat with dissolve
     
@@ -55,8 +74,8 @@ label test1one:
 #"Testing video cutscenes"
 # This will be the skippable video cutscene
 
-'''
-label cutscenetest:
+#
+#label cutscenetest:
     #window hide
     #with dissolve
     #show cutscene movie
@@ -64,5 +83,4 @@ label cutscenetest:
     #window show
     #"The video has ended."
     #return
-    $ renpy.movie_cutscene("testvideo.mp4") -- currently uses wrong video codec, too lazy to find another test video :P
-'''
+    #$ renpy.movie_cutscene("testvideo.mp4") -- currently uses wrong video codec, too lazy to find another test video :P

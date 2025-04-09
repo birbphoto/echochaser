@@ -30,6 +30,11 @@ define config.version = "0.2"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Alpha build of Echo Chaser, mostly test.
+Open-source at the moment, but will be closed-source in the future.
+Further questions?
+
+@mrbirb2 on Discord, or @birbphoto on Instagram.
 """)
 
 

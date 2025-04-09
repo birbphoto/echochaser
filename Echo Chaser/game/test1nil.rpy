@@ -111,6 +111,7 @@ label Success:
     else:
         "Not running fine"
     f "im speaking over you." (multiple=2)
+    $ renpy.pause(1.0)
     fr "yeah finn stfu" (multiple=2)
 
     "Testing say with voice"
