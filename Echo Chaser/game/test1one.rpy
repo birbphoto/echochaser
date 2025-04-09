@@ -1,5 +1,7 @@
 define wc = Character("Wall Cat", color="#56b35d")
+define mne = Character("Mene Tame", color="#8156b3")
 image wallcat = "wallcat.png"
+image mene = "mene.png"
 image bg coffee = "coffee-shop.png"
 transform double_size: 
     zoom 2.0
@@ -43,6 +45,11 @@ label test1one:
     wc "3, 2003, replacing Hits from the Street. The program focused on music, entertainment and lifestyle."
     stop sound
     
+    hide bg coffee with dissolve
+    hide wallcat with dissolve
+    
+    show mene at half_size, right with dissolve
+    mne "i am losing my mind or sum idk"
 
    
 #"Testing video cutscenes"
