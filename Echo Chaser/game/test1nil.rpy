@@ -97,7 +97,7 @@ label Success:
 
         "Yes.":
             a "good"
-            $ running = True
+            $ running = TrueCameron
         "No.":
             a "uh oh"
             $ running = False
