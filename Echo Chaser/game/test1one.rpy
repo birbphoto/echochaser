@@ -3,6 +3,7 @@ define mne = Character("Mene Tame", color="#8156b3")
 image wallcat = "wallcat.png"
 image mene = "mene.png"
 image bg coffee = "coffee-shop.png"
+image teto = "teto.jpg"
 transform double_size: 
     zoom 2.0
 transform onehalf_size:
@@ -62,13 +63,18 @@ label test1one:
     play sound "voice/madison/3.ogg"
     a "And they lived happily ever after. You really believed that. You'd think it would go back to normal. Don't give me that wounded look. You know exactly what he is and you love it. Only a true dead best friend would give it to you straight."
     stop sound
-
+   
+    hide frazier with dissolve
     hide ari with dissolve
     hide bg coffee with dissolve
     hide wallcat with dissolve
     
-    show mene at half_size, right with dissolve
-    mne "i am losing my mind or sum idk"
+    show teto at onehalf_size with dissolve
+    $renpy.pause(1.0)
+    "pearto"
+    "main villain"
+    #show mene at half_size, right with dissolve
+    #mne "i am losing my mind or sum idk"
 
    
 #"Testing video cutscenes"

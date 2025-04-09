@@ -193,3 +193,5 @@ Echo Chaser/traceback.txt
 # Optional: if you want to keep navigation.json or persistent, list them as exceptions
 # !Echo Chaser/game/saves/navigation.json
 # !Echo Chaser/game/saves/persistent
+
+*.rpyc
