@@ -109,10 +109,24 @@ alias cls=clear
 alias clera=clear
 alias cl=clear
 
+alias ls='ls --sort=extension --color=auto -CF'
+alias l='ls --sort=extension --color=auto -CF'
+alias lll='ls -Alh --sort=size . | tr -s " " | cut -d " " -f 5,9' # ls in sorted size, with everything else removed
+alias ll='ls -lh'
+alias lal='ls -Alh'
+alias l.='ls .[A-Za-z]*'
+alias la='ls -CF -A'
+# alias dir='ls --color=auto --format=vertical'
+alias vdir='ls --color=auto --format=long'
+alias lc='ls *.cpp'
+alias lnew='ls -ld *(/om[1])' # Show the newest directory
+alias lm='ls -tld **/*(m-2)' # In the current tree, show files newer than 2 days old
+
 alias dir="mpg123 -q ~/extremely-loud-incorrect-buzzer_0cDaG20.mp3"
-alias ls="ls --color=auto"
+#alias ls="ls --color=auto"
 alias dri="ls --color=auto"
 
+alias cd..="cd .."
 alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
@@ -162,4 +176,10 @@ alias rmdir="rmdir --ignore-fail-on-non-empty"
 
 alias renpy="sh ~/renpy.sh"
 
+alias grep='grep -in --color'
+alias du='du -h'
+alias df='df -h'
+alias sudo='nocorrect sudo'
+
 neof
+
