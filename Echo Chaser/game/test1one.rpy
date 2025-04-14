@@ -80,7 +80,6 @@ label test1one:
 #"Testing video cutscenes"
 # This will be the skippable video cutscene
 
-#
 #label cutscenetest:
     #window hide
     #with dissolve

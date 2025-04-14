@@ -15,7 +15,7 @@ image ari = "ari.png"
 image frazier = "frazier.png"
 image bg ilya = "ilya.jpg"
 image bg 3dmodel = "3d-model.jpg"
-image bg nyclamp = "nyc.jpg"
+image bg nyclamp = "nycgotham.jpg"
 
 transform bounce:
     pause .15

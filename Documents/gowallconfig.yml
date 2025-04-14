@@ -1,0 +1,34 @@
+themes:
+  - name: "Gritty Gotham"
+    colors:
+      - "#D8DEE9"  # Light foreground (text)
+      - "#B4BCD2"  # Dimmed text
+      - "#A3BE8C"  # Green traffic light
+      - "#88C0D0"  # Cold neon blue
+      - "#81A1C1"  # Nighttime sky tint
+      - "#5E81AC"  # Hudson river at dusk
+      - "#BF616A"  # Sirens/red lights
+      - "#D08770"  # Streetlamp orange
+      - "#EBCB8B"  # Yellow cab hues
+      - "#8FBCBB"  # Glass reflection
+      - "#4C566A"  # Urban steel
+      - "#434C5E"  # Subway tunnels
+      - "#3B4252"  # Asphalt night
+      - "#2E3440"  # Deepest shadows
+      - "#1C1F26"  # Back alley void
+      - "#121417"  # Underground basement
+      - "#0D0F11"  # Midnight pitch
+      - "#FF003C"  # Neon signage red
+      - "#00F0FF"  # Flickering teal sign
+      - "#E60073"  # Gritty magenta accent
+      - "#404552"  # Bridge steel
+      - "#1A1D22"  # Rain-washed pavement
+      - "#0B0C10"  # Under-bridge dark
+      - "#0A0A0E"  # Shadow core
+      - "#050509"  # Near-black
+  - name: "Neon Blood"
+    colors:
+      - "#FF2C3C"  # Crimson warning
+      - "#E445E0"  # Electric pink
+      - "#046E96"  # Chilly blue
+      - "#10131A"  # Midnight slate
