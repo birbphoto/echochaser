@@ -4,6 +4,7 @@ image wallcat = "wallcat.png"
 image mene = "mene.png"
 image bg coffee = "coffee-shop.png"
 image teto = "teto.jpg"
+image test movie = Movie(play="testwebm.webm", side_mask=True)
 transform double_size: 
     zoom 2.0
 transform onehalf_size:
@@ -76,16 +77,17 @@ label test1one:
     #show mene at half_size, right with dissolve
     #mne "i am losing my mind or sum idk"
 
-   
-#"Testing video cutscenes"
-# This will be the skippable video cutscene
+    "Testing video cutscenes"
+    #This will be the skippable video cutscene
+    hide teto
+label cutscenetest:
+    window hide
+    with dissolve
+    $ renpy.movie_cutscene("testwebm.webm")
+    show test movie
+    "You are watching a skippable video cutscene."
+    window show
+    "The video has ended."
+    return
+ 
 
-#label cutscenetest:
-    #window hide
-    #with dissolve
-    #show cutscene movie
-    #"You are watching a skippable video cutscene."
-    #window show
-    #"The video has ended."
-    #return
-    #$ renpy.movie_cutscene("testvideo.mp4") -- currently uses wrong video codec, too lazy to find another test video :P
