@@ -32,3 +32,110 @@ themes:
       - "#E445E0"  # Electric pink
       - "#046E96"  # Chilly blue
       - "#10131A"  # Midnight slate
+  - name: "griddy"
+    colors:
+      - "#E0D7D1"  # streetlamp haze on concrete
+      - "#C9B4A9"  # faded neon signs
+      - "#D17C9C"  # subway tile reflections
+      - "#9B79B0"  # distant billboard glow
+      - "#B24C4B"  # brake lights in rain
+      - "#9E5A5E"  # rusted fire escapes
+      - "#D07E4F"  # corner deli warmth
+      - "#D8B463"  # flickering amber lights
+      - "#7C9F6D"  # moss between cracked bricks
+      - "#5D9A8B"  # oxidized pipes and vents
+      - "#6A9DB0"  # NYPD lights in fog
+      - "#4F8CA4"  # frigid winter air
+      - "#6888C6"  # skyline shadows
+      - "#7F8FBF"  # dusk over Hudson
+      - "#A3ACC7"  # bridge steel in moonlight
+      - "#8D96A6"  # cold glass buildings
+      - "#6F7583"  # subway bench grime
+      - "#5C5F6C"  # graffiti shadows
+      - "#4B4E59"  # night alley asphalt
+      - "#3A3C45"  # wet pavement
+      - "#2C2E37"  # forgotten rooftops
+      - "#1F2027"  # city shadows
+      - "#14151A"  # underpass dark
+      - "#0D0E12"  # deep night
+      - "#090A0E"  # blackout void
+      - "#050508"  # raw grit
+  - name: "rightfootcreep"
+    colors:
+      - "#E0D7D1"  # Soft streetlight haze
+      - "#D6B8B4"  # Brick building tone
+      - "#D69EC2"  # Neon pink signage
+      - "#9B82C4"  # Deep purple twilight
+      - "#B7515E"  # Gritty alley crimson
+      - "#A35867"  # Rusty steel
+      - "#C27545"  # Sodium-vapor orange
+      - "#E1B97B"  # Taxi yellow (muted)
+      - "#7A9E6D"  # Central Park green
+      - "#5E8F87"  # Gowanus canal teal
+      - "#4B94A6"  # Wet pavement blue
+      - "#4C6C89"  # Nighttime skyline blue
+      - "#5673B8"  # Midnight over Manhattan
+      - "#6F81C1"  # Cool steel glint
+      - "#A1A9BF"  # City fog
+      - "#8A8FA1"  # Concrete overcast
+      - "#707689"  # Subway tile gray
+      - "#5D6273"  # Wet asphalt
+      - "#4C505E"  # Rusted railing gray
+      - "#3C3F4B"  # Grit-black shadows
+      - "#2E313B"  # Urban dusk
+      - "#22242C"  # Tunnel black
+      - "#181A20"  # Bronx night
+      - "#0F1014"  # Midnight in Queens
+      - "#09090D"  # Depths of the city
+  - name: "Batman"
+    colors:
+      - "#afafd5"  # Light accent – misty streetlamp
+      - "#a0a0c9"  # Slightly deeper variant
+      - "#8a8ab2"  # Muted neon violet
+      - "#7a7aa3"  # Worn poster purple
+      - "#6b6b91"  # Old sign lettering
+      - "#60607b"  # Foggy skyline steel
+      - "#55556f"  # Subway car interior
+      - "#4a4a63"  # Wet bricks
+      - "#414157"  # Drenched billboard ink
+      - "#39394c"  # Steel beam shadows
+      - "#323244"  # Dim stairwell
+      - "#2b2b3b"  # Back alley gloom
+      - "#242432"  # Cracked pavement at dusk
+      - "#1c1c2b"  # Midnight void
+      - "#191926"  # Tunnel black
+      - "#161622"  # Under-bridge dark
+      - "#13131D"  # Rooftop shadows
+      - "#101019"  # Forgotten corner
+      - "#0D0D14"  # Sewer depths
+      - "#0A0A10"  # Near-total black
+      - "#7070a0"  # Cold fluorescence
+      - "#60607b"  # Reused for tone consistency
+      - "#8a8ab2"  # Reused for neon pop
+      - "#39394c"  # Anchor midtone
+      - "#1c1c2b"  # Base background
+      - "#2f3e55"  # Deep navy blue – East River chill
+      - "#31433a"  # Dim green – faded park benches
+      - "#523a3a"  # Dried blood red – alley stain
+      - "#5a4a2f"  # Old amber – vintage bulb glow
+      - "#3c3f52"  # Faint indigo – storm cloud tint
+      - "#3d293d"  # Linear gradient – first purple shade
+      - "#5f4c67"  # Linear gradient – muted mauve
+      - "#7b809d"  # Linear gradient – dusty slate
+      - "#b0c1d9"  # Linear gradient – pale blue
+      - "#d8e4e0"  # Linear gradient – light mist
+      - "#3c1f75"  # Linear gradient – deep violet
+      - "#5b3c8b"  # Linear gradient – magenta
+      - "#7e5e9c"  # Linear gradient – soft lavender
+      - "#a77ba0"  # Linear gradient – pastel pink
+      - "#e4b9c4"  # Linear gradient – pale rose
+      - "#4a4e68"  # Linear gradient – dark indigo
+      - "#9a8d98"  # Linear gradient – muted gray
+      - "#c9ada6"  # Linear gradient – faded taupe
+      - "#f6f7f8"  # Linear gradient – off-white
+      - "#f9d2b9"  # Linear gradient – soft peach
+      - "#bf616a"  # RED
+      - "#ff003c"
+      - "#d08770"
+      - "#e60073"
+
