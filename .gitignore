@@ -195,3 +195,4 @@ Echo Chaser/traceback.txt
 # !Echo Chaser/game/saves/persistent
 
 *.rpyc
+.vscode/
