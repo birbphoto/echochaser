@@ -4,7 +4,7 @@ image wallcat = "wallcat.png"
 image mene = "mene.png"
 image bg coffee = "coffee-shop.png"
 image teto = "teto.jpg"
-image test movie = Movie(play="testwebm.webm", side_mask=True)
+image test movie = Movie(size = (1920,1080), channel="movie", play="movies/testwebm.webm", side_mask=True)
 transform double_size: 
     zoom 2.0
 transform onehalf_size:
@@ -23,7 +23,7 @@ label test1one:
     "CSay function was skipped. Refine when it works."
     "Reverting to standard function (manual...)"
     "See large comment around line 25-30."
-
+    jump cutscenetest # DEBUG!!
     show bg coffee at double_size with dissolve
     "Test conversation!! Yippee!"
     show wallcat at onehalf_size, left with dissolve
@@ -83,9 +83,10 @@ label test1one:
 label cutscenetest:
     window hide
     with dissolve
-    $ renpy.movie_cutscene("testwebm.webm")
+    #$ renpy.movie_cutscene("testwebm.webm")
     show test movie
     "You are watching a skippable video cutscene."
+    pause
     window show
     "The video has ended."
     return
