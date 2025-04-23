@@ -2,6 +2,13 @@
 define a = Character("Ari", color="#0c8fa0")
 define fr = Character("Frazier", color="#8322c4")
 
+define wc = Character("Wall Cat", color="#56b35d")
+#define mne = Character("Mene Tame", color="#8156b3")
+image wallcat = "wallcat.png"
+#image mene = "mene.png"
+image bg coffee = "coffee-shop.png"
+image teto = "teto.jpg"
+image test movie = Movie(size = (1920,1080), channel="movie", play="movies/testwebm.webm", side_mask=True)
 
 #screen main_menu:
     #add "main_menu"
@@ -20,13 +27,19 @@ image bg nyclamp = "nycgotham.jpg"
 transform bounce:
     pause .15
     yoffset 0
-    easein .175 yoffset -10
+    easein .175 yoffset -100
     easeout .175 yoffset 0
-    easein .175 yoffset -4
+    easein .175 yoffset -40
     easeout .175 yoffset 0
     yoffset 0
     repeat
 
+transform double_size: 
+    zoom 2.0
+transform onehalf_size:
+    zoom 1.5
+transform half_size:
+    zoom 0.5
 """
 Template for character speech:  
         play sound "voice/characterline.mp3"
@@ -59,6 +72,8 @@ label start:
             jump test1
         "Test version 1.1":
             jump test2
+        "Test version 1.2":
+            jump test3
 
 label test1:
     "Test version 1.0 (nil)"
@@ -69,3 +84,8 @@ label test2:
     "Test version 1.1"
     "I'm going to try to jump to another script. (test1one.rpy)"
     jump test1one
+
+label test3:
+    "Test version 1.2"
+    "Jumping to test1two.rpy"
+    jump test1two

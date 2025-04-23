@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 118, in script
-    if running:
-  File "game/script.rpy", line 118, in <module>
-    if running:
-NameError: name 'running' is not defined
+  File "game/script.rpy", line 78, in script
+    jump test1thr
+ScriptError: could not find label 'test1thr'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 118, in script
-    if running:
-  File "/home/birb/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 1856, in execute
-    if renpy.python.py_eval(condition):
-  File "/home/birb/Downloads/renpy-8.3.7-sdk/renpy/python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/home/birb/Downloads/renpy-8.3.7-sdk/renpy/python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 118, in <module>
-    if running:
-NameError: name 'running' is not defined
+  File "game/script.rpy", line 78, in script
+    jump test1thr
+  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/ast.py", line 1712, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/home/jrcarguy11/renpy-8.3.7-sdk/renpy/script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'test1thr'.
 
-Linux-6.8.0-51-generic-x86_64-with-glibc2.39 x86_64
+Linux-6.6.76-g027a1f314c8f-x86_64-with-glibc2.36 x86_64
 Ren'Py 8.3.7.25031702
-Echo Chaser 1.0
-Sun Apr  6 15:25:22 2025
+Echo Chaser 0.2
+Wed Apr 23 09:26:40 2025

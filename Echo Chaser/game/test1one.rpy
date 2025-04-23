@@ -1,17 +1,3 @@
-define wc = Character("Wall Cat", color="#56b35d")
-define mne = Character("Mene Tame", color="#8156b3")
-image wallcat = "wallcat.png"
-image mene = "mene.png"
-image bg coffee = "coffee-shop.png"
-image teto = "teto.jpg"
-image test movie = Movie(size = (1920,1080), channel="movie", play="movies/testwebm.webm", side_mask=True)
-transform double_size: 
-    zoom 2.0
-transform onehalf_size:
-    zoom 1.5
-transform half_size:
-    zoom 0.5
-
 #label start: 
 # image cutscene movie = Movie(play="images/testvideo.mp4", side_mask=True)
 
