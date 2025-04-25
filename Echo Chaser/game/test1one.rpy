@@ -9,7 +9,7 @@ label test1one:
     "CSay function was skipped. Refine when it works."
     "Reverting to standard function (manual...)"
     "See large comment around line 25-30."
-    jump cutscenetest # DEBUG!!
+    #jump cutscenetest # DEBUG!!
     show bg coffee at double_size with dissolve
     "Test conversation!! Yippee!"
     show wallcat at onehalf_size, left with dissolve
