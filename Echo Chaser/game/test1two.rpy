@@ -45,3 +45,8 @@ label posttst:
     "Dialogue 1"
     show finn with hpunch
     "Exclamation!"
+    "im acc so confused at what I want to test next"
+    "send me the script already"
+    "im bored as fuck please"
+    "i beg <@248124>"
+    
