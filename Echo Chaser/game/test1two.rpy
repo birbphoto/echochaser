@@ -1,29 +1,47 @@
 label test1two:
     "Test 1.2"
     hide all
+    menu:
+        "Test transitions":
+            jump transitions
+        "Skip":
+            jump posttst
+label transitions:
     "Transitions test"
     "Dissolve"
-    show Finn with dissolve
+    show finn with dissolve
     "Done"
-    hide Finn
+    hide finn
     "Fade"
     show finn with fade
     "Done"
-    hide Finn
+    hide finn
     "Pixellate"
-    show Finn with pixellate
+    show finn with pixellate
     "Done"
-    hide Finn
+    hide finn
     "Zoomin"
-    show Finn with zoomin
+    show finn with zoomin
     "Done"
-    hide Finn with zoomout
+    hide finn with zoomout
     "Punches"
-    show Finn
-    show Finn with vpunch
+    show finn
+    show finn with vpunch
     "V"
-    show Finn with hpunch
+    show finn with hpunch
     "H"
     "Blinds"
-    hide Finn with blinds
+    hide finn with blinds
     "Done"
+label posttst:
+    "Skipped or finished transition testing."
+    hide all
+    show finn
+    "Anim tests"
+    show finn at bounce with hpunch
+    $ renpy.pause(1.0)
+    hide finn
+    show finn
+    "Dialogue 1"
+    show finn with hpunch
+    "Exclamation!"
