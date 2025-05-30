@@ -23,7 +23,11 @@ image frazier = "frazier.png"
 image bg ilya = "ilya.jpg"
 image bg 3dmodel = "3d-model.jpg"
 image bg nyclamp = "nycgotham.jpg"
-
+''' Template for two speaking at once
+    f "im speaking over you." (multiple=2)
+    $ renpy.pause(1.0)
+    fr "yeah finn stfu" (multiple=2)
+'''
 transform bounce:
     pause .15
     yoffset 0

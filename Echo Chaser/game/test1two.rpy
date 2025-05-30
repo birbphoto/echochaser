@@ -4,6 +4,8 @@ label test1two:
     menu:
         "Test transitions":
             jump transitions
+        "t1n2":
+            jump t1n2start
         "Skip":
             jump posttst
 label transitions:
@@ -45,8 +47,23 @@ label posttst:
     "Dialogue 1"
     show finn with hpunch
     "Exclamation!"
-    "im acc so confused at what I want to test next"
-    "send me the script already"
-    "im bored as fuck please"
-    "i beg <@248124>"
-    
+    hide all with dissolve
+
+label t1n2start:
+    show bg coffee at double_size with dissolve
+    show finn at right with dissolve
+    show frazier at left with dissolve
+    f "Tired of being what you want me to be"
+    f "Feeling so faithless, lost under the surface"
+    f "Don't know what you're expecting of me"
+    f "Put under the pressure"
+    f "of walking in your shoeeeeeeeeeessss" (multiple=2)
+    $ renpy.pause(2.0)
+    fr "(caught in the undertow, just caught in the undertow)" (multiple=2)
+    f "Every step that I take"
+    f "is another mistake to youuuuuuuuuu" (multiple=2)
+    $ renpy.pause (2.0)
+    fr "(caught in the undertow, just caught in the undertow)" (multiple=2)
+
+    "that concludes the numbing check"
+    "ok im sorry acc throw me off a cliff or sum that was stupid"
