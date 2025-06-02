@@ -57,7 +57,7 @@ label test1one:
     hide wallcat with dissolve
     
     show teto at onehalf_size with dissolve
-    $renpy.pause(1.0)
+    $ renpy.pause(1.0)
     "pearto"
     "main villain"
     #show mene at half_size, right with dissolve
