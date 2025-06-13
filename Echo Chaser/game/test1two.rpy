@@ -70,4 +70,7 @@ label t1n2start:
 
     "that concludes the numbing check"
     "ok im sorry acc throw me off a cliff or sum that was stupid"
+    hide finn
+    hide frazier
+    hide bg coffee
     jump start

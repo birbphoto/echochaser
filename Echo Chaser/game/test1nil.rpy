@@ -119,5 +119,7 @@ label Success:
     f "hi"
     stop sound
     fr "no"
-
+    hide ari
+    hide finn
+    hide bg nyclamp
     jump start

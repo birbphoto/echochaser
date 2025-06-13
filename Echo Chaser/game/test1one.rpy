@@ -75,5 +75,5 @@ label cutscenetest:
     pause
     window show
     "The video has ended."
-    return
+    hide test movie
     jump start
