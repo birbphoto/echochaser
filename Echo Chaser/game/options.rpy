@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.2"
+define config.version = "0.3"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -131,7 +131,7 @@ default preferences.text_cps = 20
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
 
-default preferences.afm_time = 15
+default preferences.afm_time = 7
 
 
 ## Save directory ##############################################################

@@ -56,6 +56,7 @@ define gui.interface_text_color = '#ffffff'
 
 ## Fonts and Font Sizes ########################################################
 
+# no option to change accessibility menu. weird.
 ## The font used for in-game text.
 define gui.text_font = "fonts/FantasqueSansMNerdFont-Regular.ttf"
 

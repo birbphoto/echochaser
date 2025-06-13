@@ -47,12 +47,15 @@ label posttst:
     "Dialogue 1"
     show finn with hpunch
     "Exclamation!"
-    hide all with dissolve
+    hide finn with dissolve
 
 label t1n2start:
     show bg coffee at double_size with dissolve
-    show finn at right with dissolve
-    show frazier at left with dissolve
+    # i don't know what the FUCK is going on here. only ari shows up?
+    # for some reason "hide all" failed, had to manually hide Finn exclusively.
+    # noted for when sprites dont show up ig? wtv
+    show finn at right
+    show frazier at left
     f "Tired of being what you want me to be"
     f "Feeling so faithless, lost under the surface"
     f "Don't know what you're expecting of me"
@@ -67,3 +70,4 @@ label t1n2start:
 
     "that concludes the numbing check"
     "ok im sorry acc throw me off a cliff or sum that was stupid"
+    jump start

@@ -49,6 +49,6 @@ label qte_success:
 
 label qte_fail:
     "Too slow! Or wrong key!"
-    a "you fucking suck jump off a cliff" #dont change inside joke trust
+    a "wow you suck" #changed because ugh nono word :(
     $ fail = True
     return

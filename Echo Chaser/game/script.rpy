@@ -70,7 +70,7 @@ Template for character speech:
         stop sound
 """
 
-label start:
+label start: #make sure you call back afterwards on each testx.
     menu:
         "Test version 1.0":
             jump test1

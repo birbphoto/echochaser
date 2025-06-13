@@ -30,7 +30,7 @@ label test1nil:
     "WRONGGGG"
 
     "testing music"
-    play music "beethoven.mp3"
+    play music "music/beethoven.mp3"
     "you will now hear some slow jazz"
     stop music fadeout 1.0
     f "oh no jazz no longer"
@@ -97,7 +97,7 @@ label Success:
 
         "Yes.":
             a "good"
-            $ running = TrueCameron
+            $ running = True
         "No.":
             a "uh oh"
             $ running = False
@@ -119,3 +119,5 @@ label Success:
     f "hi"
     stop sound
     fr "no"
+
+    jump start

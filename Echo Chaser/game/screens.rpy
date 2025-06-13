@@ -1051,7 +1051,7 @@ screen keyboard_help():
 
     hbox:
         label "Shift+A"
-        text _("Opens the accessibility menu.")
+        text _("Opens the accessibility menu.") # Only mention of accessibility menu. A bug I cant fix?
 
 
 screen mouse_help():

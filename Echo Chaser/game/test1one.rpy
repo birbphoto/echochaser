@@ -76,5 +76,4 @@ label cutscenetest:
     window show
     "The video has ended."
     return
- 
-
+    jump start
