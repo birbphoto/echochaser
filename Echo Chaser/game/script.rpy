@@ -9,6 +9,8 @@ image wallcat = "wallcat.png"
 image bg coffee = "coffee-shop.png"
 image teto = "teto.jpg"
 image test movie = Movie(size = (1920,1080), channel="movie", play="movies/testwebm.webm", side_mask=True)
+image test bg 1 = "test80p1.png"
+image test bg 2 = "test80p2.png"
 
 #screen main_menu:
     #add "main_menu"
@@ -16,6 +18,19 @@ image test movie = Movie(size = (1920,1080), channel="movie", play="movies/testw
 
 init python:
     renpy.music.register_channel("voice", loop=False, stop_on_mute=True)
+    import random
+    tarot_cards = [
+        "The Fool", "The Magician", "The High Priestess", "The Empress", "The Emperor",
+        "The Hierophant", "The Lovers", "The Chariot", "Strength", "The Hermit",
+        "Wheel of Fortune", "Justice", "The Hanged Man", "Death", "Temperance",
+        "The Devil", "The Tower", "The Star", "The Moon", "The Sun",
+        "Judgement", "The World",
+    ]
+    current_card = None
+    def draw_tarot_card():
+        global current_card, current_orientation
+        current_card = random.choice(tarot_cards)
+        current_orientation = random.choice(["Upright", "Reversed"])
 
 image finn = "finn.png"
 image ari = "ari.png"
@@ -78,6 +93,8 @@ label start: #make sure you call back afterwards on each testx.
             jump test2
         "Test version 1.2":
             jump test3
+        "Test version 1.3":
+            jump test4
 
 label test1:
     "Test version 1.0 (nil)"
@@ -94,4 +111,7 @@ label test3:
     "Jumping to test1two.rpy"
     jump test1two
 
-#test
+label test4:
+    "Test version 1.3"
+    "Jumping to test1thr.rpy"
+    jump test1thr
