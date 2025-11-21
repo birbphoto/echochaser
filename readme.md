@@ -4,10 +4,14 @@ this will be on the test
 
 # this repository and installs
 hi!! thank you for exploring or testing
+
 this does not have anything .env'd or hidden except for .gitignore i think
+
 we do have voice lines in here from friends
+
 this is a indev renpy game that does not have anything on here yet so sit tight i guess
-if you want to play or talk with us my discord is @mrbirb1 and i'll put install instructions below
+
+if you want to join or talk with us my discord is @mrbirb1 and i'll put install instructions below
 
 # installation
 what you need:
